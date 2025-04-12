@@ -27,7 +27,6 @@ export const useAudio = (containerRef: React.RefObject<HTMLDivElement>): UseAudi
   const [activeEffect, setActiveEffect] = useState<AudioEffect>('none');
   
   const audioContext = useRef<AudioContext | null>(null);
-  const sourceNode = useRef<AudioBufferSourceNode | null>(null);
   const gainNode = useRef<GainNode | null>(null);
   const biquadFilter = useRef<BiquadFilterNode | null>(null);
   const convolver = useRef<ConvolverNode | null>(null);
@@ -166,7 +165,6 @@ export const useAudio = (containerRef: React.RefObject<HTMLDivElement>): UseAudi
       
       // Create source, gain and filter nodes for offline processing
       const offlineSource = offlineCtx.createBufferSource();
-      const offlineGain = offlineCtx.createGain();
       const offlineBiquad = offlineCtx.createBiquadFilter();
       const offlineDelay = offlineCtx.createDelay(5.0);
       const offlineConvolver = offlineCtx.createConvolver();
