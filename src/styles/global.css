@@ -1,0 +1,59 @@
+:root {
+  --color-primary: #1E69FF;
+  --color-green: #34C759;
+  --color-orange: #FF9500;
+  --color-red: #FF5248;
+  --color-yellow: #FFC700;
+  --color-purple: #7A47E7;
+  --color-lofi: #8657EB;
+  
+  --color-text-primary: #424242;
+  --color-text-secondary: #676767;
+  --color-text-tertiary: rgba(66, 66, 66, 0.75);
+  
+  --color-background: #FFFFFF;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-slider-background: #F0F0F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Text', 'SF Pro Rounded', 'SF Pro Display', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+} 

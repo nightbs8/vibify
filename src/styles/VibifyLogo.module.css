@@ -1,0 +1,62 @@
+.vibifyLogo {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: -4.5px; /* Match Figma gap value */
+}
+
+.logoChar {
+  height: 120px; /* Control the size of the logo */
+  margin-right: -4.5px; /* Match Figma gap value */
+  user-select: none;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoChar:hover {
+  transform: translateY(-5px);
+}
+
+/* Letter-specific styles with matching color shadows */
+.logoChar:nth-child(1) {
+  filter: drop-shadow(0 0 10px rgba(85, 74, 255, 0.4)); /* Primary blue */
+}
+
+.logoChar:nth-child(2) {
+  filter: drop-shadow(0 0 10px rgba(0, 184, 148, 0.4)); /* Green */
+}
+
+.logoChar:nth-child(3) {
+  filter: drop-shadow(0 0 10px rgba(255, 95, 95, 0.4)); /* Red */
+}
+
+.logoChar:nth-child(4) {
+  filter: drop-shadow(0 0 10px rgba(255, 197, 0, 0.4)); /* Yellow */
+}
+
+.logoChar:nth-child(5) {
+  filter: drop-shadow(0 0 10px rgba(153, 51, 255, 0.4)); /* Purple */
+}
+
+.logoChar:nth-child(6) {
+  filter: drop-shadow(0 0 10px rgba(255, 126, 0, 0.4)); /* Orange */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logoChar {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoChar {
+    height: 60px;
+  }
+} 
